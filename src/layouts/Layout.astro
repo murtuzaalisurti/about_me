@@ -233,6 +233,15 @@ import.meta.env.PROD
 </html>
 
 <script>
+    import { animate, inView } from "motion";
+
+    inView(".section", (info) => {
+        const element = info.target as HTMLElement;
+        const animation = animate(element, { opacity: 1 }, { duration: 1 });
+
+        return (leaveInfo) => animation.stop();
+    });
+
     // web components
     await import.meta.glob(
         [

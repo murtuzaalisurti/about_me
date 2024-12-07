@@ -322,6 +322,10 @@ main {
         }
     }
 
+    section.section:not(#projects) {
+        opacity: 0;
+    }
+
     #projects,
     #posts,
     #experience {
