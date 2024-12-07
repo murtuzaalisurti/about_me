@@ -21,9 +21,9 @@
     "dayjs": "^1.11.13",
     "googleapis": "^144.0.0",
     "nanoid": "^5.0.9",
-    "open-graph-scraper": "^6.8.2",
+    "open-graph-scraper": "^6.8.3",
     "rss-parser": "^3.13.0",
-    "sass": "^1.81.0"
+    "sass": "^1.82.0"
   },
   "engines": {
     "node": ">=20.9.0"
