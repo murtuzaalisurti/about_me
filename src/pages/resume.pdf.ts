@@ -3,7 +3,7 @@ import path from 'node:path'
 
 export async function GET(req: Request) {
     const pdf = readFileSync(
-        path.join(process.cwd(), 'public', 'resumeLight.pdf'),
+        path.join(process.cwd(), 'public', 'resume-murtuzaalisurti.pdf'),
         {
             encoding: 'binary'
         }

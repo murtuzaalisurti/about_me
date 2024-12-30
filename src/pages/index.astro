@@ -2,6 +2,11 @@
 import { customAlphabet } from "nanoid";
 import Parser from "rss-parser";
 
+/**
+ * ? importing lucide icons
+ */
+import ArrowUpRight from "lucide-static/icons/square-arrow-out-up-right.svg"; // https://docs.astro.build/en/reference/experimental-flags/svg/
+
 import Layout from "../layouts/Layout.astro";
 import List from "../components/List.astro";
 import ExperienceBlock from "../components/ExperienceBlock.astro";
@@ -45,6 +50,7 @@ items.sort((a, b) => {
                     >join me</a
                 >?
             </p>
+            <p >Ah yes, <a href="/resume.pdf">resume <ArrowUpRight width={18} height={18} /></a></p>
         </section>
         <section id="projects" class="section">
             <SectionHeader anchor="projects" heading="Projects" emoji={"🚀"}>

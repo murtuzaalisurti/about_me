@@ -317,8 +317,13 @@ main {
     #bio {
         gap: 1rem;
 
-        *:not(h1) {
+        *:not(h1,svg) {
             margin-bottom: 1rem;
+        }
+
+        svg {
+            width: 18px;
+            height: 18px;
         }
     }
 
