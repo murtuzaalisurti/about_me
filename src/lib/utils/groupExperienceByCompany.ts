@@ -32,6 +32,13 @@ export const groupExperienceByCompany = (list: Experiences["list"]) => {
                 companyDuration.diffMonths += months as number;
             });
 
+            const totalMonths = (companyDuration.diffYears * 12) + companyDuration.diffMonths;
+            const totalYears = Math.floor(totalMonths / 12);
+            const monthsOverTotalYears = totalMonths % 12;
+
+            companyDuration.diffYears = totalYears;
+            companyDuration.diffMonths = monthsOverTotalYears;
+
             companyDuration.html = getDurationString(companyDuration.diffYears, companyDuration.diffMonths);
 
             roles.forEach((role) => (role.companyDuration = companyDuration));
